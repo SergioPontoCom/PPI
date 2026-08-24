@@ -19,9 +19,10 @@
     
         border: 3px dotted purple;}
 
-        table,td{
+        table#SEPEI,#SEPEI td,#SEPEI caption,#SEPEI th{
             border: 1px solid black;
             border-collapse: collapse;
+            background-color: rgba(120, 100, 50, 0.23);
         }
     </style>
 
@@ -61,6 +62,7 @@
     <p>Ao longo dos anos a web evoluiu e novas tecnologia foram introduzidas como <span>CSS</span> e JavaScript</p>
     <p>A = Ax + Bx<sup>2</sup>+ C</p>
 
+    <!-- Seção de Listas-->
 
     <section id="Listas">
         <p>O HTML possui listas não ordenadas, ordenadas e detalhasdas,criadas com as tags ul ol dl</p>
@@ -85,6 +87,8 @@
             <dd>bebida obtida com a torra e fervura de grãos de café, essencial à vida</dd>
         </dl>
     </section>
+
+        <!-- cheção de Tabelas-->
 
     <section id="tabelas">
         <p>o HTML fornece suporte a tabelas por meio de tag table, e outras tags,como tag definição de linha &lt tr &gt <i>table row</i>,
@@ -131,6 +135,72 @@
             </tr>
 
         </table>
+
+        <!-- Tabela de alunos abaixo-->
+
+        <table id="SEPEI"
+            <tr><th>indice</th><th>nome</th><th>idade</th></tr>
+
+            <tr>
+                <td>1</td>
+                <td>Cleiton</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Racha</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Parapeito</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total Alunos</td>
+                <td>3</td>
+            </tr>
+
+        </table>
+
+
+    </section>
+
+    <!-- Formulario -->
+    <section>
+
+        <form action="">
+            <label for="InputNome">Nome</label>
+            <input id="InputNome" type="text">
+            
+            <label for="InputTelefone">Telefone</label>
+            <input id="InputTelefone" type="text" pattern="">
+
+            <label for="InputVolume">Volume</label>
+            <input id="InputVolume" type="range">
+
+            <label for="InputIdade">Idade</label>
+            <input id="InputIdade" type="text">
+
+            <input type="submit" value="enviar">
+
+            <form action="https://google.com/search" method="get"></form>
+
+        </form>
+
+        <form action="">
+            <form method="post">
+                <label for="usr">Usuario</label>
+                <input type="text">
+
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" name="Senha">
+
+                <input type="submit">
+            </form>
+        </form>
+
+
 
     </section>
 
